@@ -45,7 +45,7 @@ def second_task() -> int:
         k = int(input("k: "))
         
         for _ in range(k):
-            num = str(min([int(num[:i] + num[i+1:]) for i in range(len(num))]))
+            num = str(min(int(num[:i] + num[i+1:]) for i in range(len(num))))
         
         return num
     except ValueError:
